@@ -1,0 +1,17 @@
+.button {
+  text-decoration: none;
+  margin: 0 px;
+  font-size: 25px;
+  padding: 10px 50px;
+  color: white;
+  border-radius: 10px;
+
+
+}
+
+.button:hover {
+  background-color: yellowgreen;
+  color: white;
+}
+
+

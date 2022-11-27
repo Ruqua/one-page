@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Source+Sans+Pro&display=swap');
+@import url('./navbar.css');
+@import url('./button.css');
+
+
+* {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #383236;
+}
+
+.presentation, .fiole, .lepee, .sallon {
+  margin: 0 auto 30px auto;
+
+
+  background-color: #f8cd70c7;
+
+  border-radius: 5px;
+  font-size: 90px;
+  color: rgb(255, 255, 255);
+}
+
+.presentation > * > :first-child {
+  padding: 100px zpx;
+}
+
+
+.presentation p, .fiole p, .lepee p, .sallon p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.presentation p span, .fiole p span, .lepee p span, .sallon p span {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .presentation img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .presentation p, .fiole p, .lepee p, .sallon p {
+    font-size: 32px;
+    font-weight: 450;
+  }
+  
+  .presentation p span, .fiole p span, .lepee p span, .sallon p span {
+    font-size: 24px;
+    font-weight: 450;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  div.presentation img {
+    width: 150px;
+    height: 150px;
+  }
+
+}
+
+.fiole {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+}
+
+.fiole .lepee {
+  padding: 4px;
+}
+
+.fiole div, .lepee div, .sallon div.sallon-presentation, div.sallon-img {
+  margin: 4px;
+}
+
+
+.fiole .fiole-presention, .lepee .lepee-presentation, .sallon .sallon-presentation {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.fiole .fiole-presention div, .lepee .lepee-presentation div, .sallon .sallon-presentation div {
+  padding-bottom: 20px;
+}
+
+.fiole .fiole-img {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
+
+.fiole img, .lepee img, .sallon img {  
+  aspect-ratio: 16/9;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #f8cd70c7;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .fiole {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+  }
+
+}
+
+.lepee {
+  display: flex;
+  flex-direction: row;
+}
+
+.lepee div {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .lepee {
+    flex-direction: column;
+  }
+
+}
+
